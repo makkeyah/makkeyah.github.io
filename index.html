@@ -31,26 +31,57 @@
         }
         a.button {
             display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            font-size: 18px;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 6px;
         }
         a.button:hover {
             background-color: #0056b3;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Smarter Trading Starts Here</h1>
-        <p>Access real-time buy & sell signals with VIPIndicators and take control of your trades today.</p>
+        <p>Get real-time buy & sell signals with VIPIndicators and take control of your trades today.</p>
         <a class="button" href="https://www.vipindicators.com/trading-indicators?hopId=9cbfce42-fb33-4b82-8fc3-be247e65976a" target="_blank">
             Try VIPIndicators Now
         </a>
+
+        <form action="https://formspree.io/f/mnqeqydl" method="POST">
+            <h3>Get Updates & Tips:</h3>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <input type="submit" value="Subscribe">
+        </form>
     </div>
 </body>
 </html>
